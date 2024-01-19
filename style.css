@@ -1,0 +1,83 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #b51010;
+    color: #495057;
+}
+
+.navbar {
+    background-color: #b11313;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section {
+    background-color: #0a0a38;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    color: #f8f9fa;
+
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #3538f5;
+    border-color: #3538f5;
+}
+
+.btn-primary:hover {
+    background-color: #fd746c;
+    border-color: #fd746c;
+}
+
+.featured-dishes {
+    background-color: #1893c0;
+    padding: 80px 0;
+    
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.contact-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.contact-section form {
+    background-color: #000001;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Food Delivery</title>
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <a class="navbar-brand " style="font-weight: bolder; font-size: larger;" href="#">Food Delivery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#" id="home-link">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="menu-link">Menu</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="contact-link">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-4" > Delicious Food Delivered to Your Doorstep</h1>
+                    <p class="lead">Order now and enjoy a variety of cuisines from the comfort of your home.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Dishes Section -->
+<section class="featured-dishes" id="featured-dishes">
+    <div class="container" >
+        <h2 class="text-center mb-4" style="font-weight: bolder;">Featured Dishes</h2>
+        <div class="row" >
+            <!-- Featured Dish 1 -->
+            <div class="col-md-4" style="padding-bottom: 20px;">
+                <div class="card">
+                    <img src="SpaghettiBolognese.webp" class="card-img-top" alt="Dish 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Spaghetti Bolognese</h5>
+                        <p class="card-text">Classic Italian pasta dish with rich meat sauce.</p>
+                        <button class="btn btn-primary" onclick="orderNow('Spaghetti Bolognese')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Dish 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Tandoori-Chicken.webp" class="card-img-top" alt="Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Chicken Tandoori</h5>
+                        <p class="card-text">Tender grilled chicken marinated in Indian spices.</p>
+                        <button class="btn btn-primary" onclick="orderNow('Chicken Tandoori')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Dish 3 -->
+            <div class="col-md-4" >
+                <div class="card">
+                    <img src="Sushi-Platter-Sushi-Catering-1024x1024.jpg" class="card-img-top" alt="Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sushi Platter</h5>
+                        <p class="card-text">Assorted sushi rolls for a delightful Japanese experience.</p>
+                        <button class="btn btn-primary" onclick="orderNow('Sushi Platter')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Dish 4 -->
+            <div class="col-md-4" >
+                <div class="card">
+                    <img src="pizza2.jpeg" class="card-img-top" alt="Dish 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Margherita Pizza</h5>
+                        <p class="card-text">Classic pizza with tomato, mozzarella, and basil.</p>
+                        <button class="btn btn-primary" onclick="orderNow('Margherita Pizza')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Dish 5 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="ceasar-salad-dressing-sq-031.jpg" class="card-img-top" alt="Dish 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Caesar Salad</h5>
+                        <p class="card-text">Crispy romaine lettuce, croutons, and parmesan cheese.</p>
+                        <button class="btn btn-primary" onclick="orderNow('Caesar Salad')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Dish 6 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="browmie.jpeg" class="card-img-top" alt="Dish 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Brownie Sundae</h5>
+                        <p class="card-text">Warm chocolate brownie topped with vanilla ice cream.</p>
+                        <button class="btn btn-primary" onclick="orderNow('Chocolate Brownie Sundae')">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <h2>Contact Us</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Food Delivery Script -->
+    <script src="javascript.js"></script>
+</body>
+</html>
